@@ -133,8 +133,8 @@ label[for=performance]{ width: 10%}
 /* 연락처 상자 */
 #contact{
     margin-top:125px; padding:5px;
-    background:rgb(0, 102, 255);
-    color:rgb(223, 227, 255);
+    background:rgb(48, 131, 255);
+    color:white;
 
     
 }

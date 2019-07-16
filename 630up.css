@@ -1,0 +1,209 @@
+/* 초기화 */
+*{margin:0; padding:0;}
+html, body { height: 100% }
+body { font-family: 'Noto Sans KR', sans-serif; position:relative;}
+li { list-style: none; }
+a { text-decoration: none; color:#0000EE; }
+a:visited{color:#0000EE;}
+
+/* 모바일 요소들 숨기기 */
+.mobile{display:none;}
+
+/* 왼쪽 카테고리 */
+#side_category{
+    width:200px; 
+    position:fixed;
+    left:0px; top:0px; bottom:0px;
+    background:#3c4a65;
+}
+#side_category h1{
+    padding:10px;
+    
+    text-align:center;
+    color:white;
+}
+#side_category>h2{
+    
+    margin-bottom: 60px;
+    text-align:center;
+    color:#96B9FF;
+}
+#side_category label h2{
+    border-bottom: 1px dotted white;
+    margin:0 5px;;
+    padding:20px;
+    box-sizing:border-box;
+    font-weight:10;
+    color:white;
+}
+
+#side_category label h2:hover{
+    background:rgb(141, 141, 141);
+    color:white;
+}
+
+/* 액티브 시 상태 유지 */
+#all:checked ~ #side_category > label[for=all] > h2{
+    background:white;
+    font-weight:bold;
+    color:black;
+}
+#major_club:checked ~ #side_category > label[for=major_club] > h2{
+    background:white;
+    font-weight:bold;
+    color:black;
+}
+#minor_club:checked ~ #side_category > label[for=minor_club] > h2{
+    background:white;
+    font-weight:bold;
+    color:black;
+}
+#small_group:checked ~ #side_category > label[for=small_group] > h2{
+    background:white;
+    font-weight:bold;
+    color:black;
+}
+
+input{ display:none;}
+
+
+
+
+/* 오른쪽 컨텐츠 */
+.main_contents{
+    display:block;
+    margin-left:210px;
+    margin-right:10px;
+    padding:10px;
+}
+
+/* 상단-연락처 */
+#contact{
+    background:#efefef;
+    margin-top:10px;
+}
+#contact>h3{
+font-weight:100;
+}
+
+/* 필터 */
+
+#filter{ border: 2px solid black; overflow:hidden; margin-top:10px;}
+#filter>#check{height:100px;line-height:70px; margin:10px 0;}
+#filter label{
+    padding:10px; background:rgb(184, 184, 184);
+    border-radius:10px; margin:5px 1px 0 5px;
+    }
+#filter input{ 
+    display: block; width:20px; height: 20px; float:left;
+    margin:18.8px 0;
+}
+#filter label[for=fall_sem]{
+    display:block; margin:10px 0 0 5px;
+    width:105px; height:44px; line-height:24px;
+    text-align:center;
+    box-sizing: border-box;
+}
+/*hover 시 디자인 변경*/
+#filter label:hover{
+    background:black;
+    color:white;
+}
+
+/* 체크시 디자인 변경 */
+#fall_sem:checked ~ #filter label[for=fall_sem]{
+    background:#5583da;
+    color:white;
+}
+#sports:checked ~ #filter label[for=sports]{
+    background:#5583da;
+    color:white;
+}
+#culture:checked ~ #filter label[for=culture]{
+    background:#5583da;
+    color:white;
+}
+#study:checked ~ #filter label[for=study]{
+    background:#5583da;
+    color:white;
+}
+#performance:checked ~ #filter label[for=performance]{
+    background:#5583da;
+    color:white;
+}
+#all_topic:checked ~ #filter label[for=all_topic]{
+    background:#5583da;
+    color:white;
+}
+
+
+
+
+
+/* 동아리 목록 */
+/* 전체 행 */
+.club{
+    border-bottom:1px dotted black;
+    padding:5px;
+    overflow: hidden;
+}
+
+.club>h2{
+    float:left;
+    width:330px;
+    font-weight:100;
+    margin-right:10px;
+}
+@media screen and (min-width:630px) and (max-width: 1050px) {
+    .club>h2{
+        float:left;
+        width:35%;
+        font-size:1.2em;
+        margin-right:10px;
+    }
+}
+/* 첫 행 */
+.head{margin-top:30px; border-bottom:2px solid black;}
+.head>h2{font-weight:bold; }
+#detail_head{ width:100px;}
+
+/* 행 별 */
+.club label{
+    display:block;
+    float:left;
+    
+    height:40px; width:60px;
+    line-height:36px; font-size:20px;
+    text-align:center; margin-left:20px;
+
+    background:gray; border-radius:10px;
+}
+
+
+/* 상세내용 레이아웃 및 기본 안보이기 */
+.detail{ display:none; background:#efefef;padding:30px;}
+
+/*펼치기 클릭 시 상세내용 보이고 닫기 보이게*/
+
+.club label>close{ display:none;}
+#section>input:checked~div.detail{display:block;}
+#section>input:checked+div open{display:none;}
+#section>input:checked+div close{display:block;}
+
+/* 카테고리, 필터 적용 */
+
+/* 카테고리 */
+#major_club:checked~#clubs>div:not(.major_club){ display:none;}
+#minor_club:checked~#clubs>div:not(.minor_club){ display:none;}
+#small_group:checked~#clubs>div:not(.small_group){ display:none;}
+
+/* 카테고리 클릭시 필터 및 세부내용 해제 */
+/* 못함 ㅠㅠㅠㅠㅠㅠㅠㅠ*/
+
+/* 필터 */
+#fall_sem:checked~#clubs>div:not(.fall){ display:none;}
+#sports:checked~#clubs>div:not(.sports){ display:none;}
+#study:checked~#clubs>div:not(.study){ display:none;}
+#culture:checked~#clubs>div:not(.culture){ display:none;}
+#performance:checked~#clubs>div:not(.performance){ display:none;}
+

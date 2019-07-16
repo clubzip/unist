@@ -1,0 +1,191 @@
+input { display: none;}
+
+/* 초기화 */
+*{margin:0; padding:0;}
+html, body { height: 100%;}
+body {font-family: 'Noto Sans KR', sans-serif; position:relative;}
+li { list-style: none; }
+a { text-decoration: none; color:rgb(0, 102, 255); }
+a:visited{color:rgb(0, 102, 255);}
+
+/* 헤더 구성 */
+#side_category {
+    position:fixed; top:0; left:0; right:0;
+    overflow:hidden;
+    background:white;
+    z-index:999;
+    border-bottom:1px solid rgb(168, 168, 168);
+}
+
+    /* 제목 */
+#side_category h1{
+    display:inline-block; width:110px;
+    font-size:1.5em; color:black;
+    margin-top:10px; margin-left:10px;
+}
+    
+#side_category > h2 {
+    position:absolute;font-size:1.2em;
+    top:13px; left:120px;
+    color:rgb(0, 102, 255);
+}
+    /*내비게이션*/
+#side_category>label>h2{
+    float:left;
+    font-size:0.9em;
+    line-height:2em;
+    margin-top: 15px;
+    font-weight:100;
+}
+label[for=all]>h2 {
+    text-align:center;
+    width:20%;
+}
+label[for=major_club]>h2 {
+    text-align:center;
+    width:30%;
+}
+label[for=minor_club]>h2 {
+    text-align:center;
+    width:35%;
+}
+label[for=small_group]>h2 {
+    text-align:center;
+    width:15%;
+}
+
+    /* 액티브 시 상태 유지 */
+#all:checked ~ #side_category > label[for=all] > h2{
+    color:rgb(0, 102, 255);
+    font-weight:bold;
+    border-bottom:2px solid rgb(0, 102, 255);
+}
+#major_club:checked ~ #side_category > label[for=major_club] > h2{
+    color:rgb(0, 102, 255);
+    font-weight:bold;
+    border-bottom:2px solid rgb(0, 102, 255);
+}
+#minor_club:checked ~ #side_category > label[for=minor_club] > h2{
+    color:rgb(0, 102, 255);
+    font-weight:bold;
+    border-bottom:2px solid rgb(0, 102, 255);
+}
+#small_group:checked ~ #side_category > label[for=small_group] > h2{
+    color:rgb(0, 102, 255);
+    font-weight:bold;
+    border-bottom:2px solid rgb(0, 102, 255);
+}
+
+
+/* 필터 - 내비게이션 */
+#filter{
+    position:fixed;
+    z-index:998;
+    top:92px; width:100%; height:35px;
+    background:#efefef;
+    border-bottom:1px solid rgb(168, 168, 168);
+}
+#filter h2, #filter p{display:none;}
+#filter label{
+    display:block;
+    float:left;
+    border-radius:15px;
+    box-sizing:border-box;
+    padding:3px; margin:5px 0.5%;
+    font-size:0.8em;
+    text-align:center;
+}
+label[for=fall_sem]{ width: 23%}
+label[for=all_topic]{ width: 15%}
+label[for=study]{ width: 10%}
+label[for=sports]{ width: 15%}
+label[for=culture]{ width: 20%}
+label[for=performance]{ width: 10%}
+
+    /* 체크시 디자인 변경 */
+#fall_sem:checked ~ #filter label[for=fall_sem]{
+    background:rgb(0, 102, 255);
+    color:white;
+}
+#sports:checked ~ #filter label[for=sports]{
+    background:rgb(0, 102, 255);
+    color:white;
+}
+#culture:checked ~ #filter label[for=culture]{
+    background:rgb(0, 102, 255);
+    color:white;
+}
+#study:checked ~ #filter label[for=study]{
+    background:rgb(0, 102, 255);
+    color:white;
+}
+#performance:checked ~ #filter label[for=performance]{
+    background:rgb(0, 102, 255);
+    color:white;
+}
+#all_topic:checked ~ #filter label[for=all_topic]{
+    background:rgb(0, 102, 255);
+    color:white;
+}
+
+
+
+/* 연락처 상자 */
+#contact{
+    margin-top:125px; padding:5px;
+    background:rgb(0, 102, 255);
+    color:rgb(223, 227, 255);
+
+    
+}
+#contact>h3 { font-size:0.9em;font-weight:100;}
+#contact>h2 { font-size:1em; color:white;}
+
+/* 동아리 목록 */
+
+#section>div.club{
+    position:relative;
+    padding:5px;margin:0 5px;
+    border-bottom:1px solid #3c4a65;
+}
+    /* PC UI 숨기기 */
+.head{ display:none; }
+open,close{display:none;}
+
+    /* section 전체 label로 덮기 */
+#section label {
+    position:absolute;
+    top:0px;bottom:0px;left:0px;right:0px;
+ }
+
+    /* 글자 크기조절 */
+#section>div.club>h2:first-of-type{font-size:1.4em;}
+#section>div.club>h2:last-of-type{font-size:1em;font-weight:100;}
+
+    /* 상세내용 디자인 */
+.detail{
+    background:#efefef; padding:10px 5px;
+}
+.detail>p>br{display:none;}
+.detail{font-size:0.8em;}
+.detail>h3{font-weight:500;}
+
+    /*상세내용 보기 */
+div.detail{display:none;}
+#section>input:checked~div.detail{display:block;}
+
+
+/* 카테고리, 필터 적용 */
+
+    /* 카테고리 */
+#major_club:checked~#clubs>div:not(.major_club){ display:none;}
+#minor_club:checked~#clubs>div:not(.minor_club){ display:none;}
+#small_group:checked~#clubs>div:not(.small_group){ display:none;}
+
+    /* 필터 */
+#fall_sem:checked~#clubs>div:not(.fall){ display:none;}
+#sports:checked~#clubs>div:not(.sports){ display:none;}
+#study:checked~#clubs>div:not(.study){ display:none;}
+#culture:checked~#clubs>div:not(.culture){ display:none;}
+#performance:checked~#clubs>div:not(.performance){ display:none;}
+

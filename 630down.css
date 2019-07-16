@@ -19,7 +19,7 @@ a:visited{color:rgb(0, 102, 255);}
 
     /* 제목 */
 #side_category h1{
-    width:110px;
+    display:block;width:110px;
     font-size:1.5em; color:black;
     margin-top:10px; margin-left:10px;
 }
@@ -43,11 +43,11 @@ label[for=all]>h2 {
 }
 label[for=major_club]>h2 {
     text-align:center;
-    width:29%;
+    width:30%;
 }
 label[for=minor_club]>h2 {
     text-align:center;
-    width:34%;
+    width:35%;
 }
 label[for=small_group]>h2 {
     text-align:center;

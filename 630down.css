@@ -19,7 +19,7 @@ a:visited{color:rgb(0, 102, 255);}
 
     /* 제목 */
 #side_category h1{
-    display:inline-block; width:110px;
+    width:110px;
     font-size:1.5em; color:black;
     margin-top:10px; margin-left:10px;
 }

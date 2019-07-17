@@ -131,15 +131,13 @@ label[for=performance]{ width: 10%}
 
 
 /* 연락처 상자 */
-#contact{
+#header{
     margin-top:125px; padding:5px;
     background:rgb(48, 131, 255);
     color:white;
-
-    
 }
-#contact>h3 { font-size:0.9em;font-weight:100;}
-#contact>h2 { font-size:1em; color:white;}
+#header>h3 { font-size:0.9em;font-weight:100;}
+#header>h2 { font-size:1em; color:white;}
 
 /* 동아리 목록 */
 
@@ -175,6 +173,22 @@ div.detail{display:none;}
 #section>input:checked~div.detail{display:block;}
 
 
+/* "이 밑으로는 아직 내용이 없습니다!" 행 */
+div.contents_layer{
+    background: #3c4a65; color: white;
+    padding:10px;
+}
+
+div.contents_layer h2{
+    font-size:1.2em;
+    margin-bottom:10px;
+}
+
+div.contents_layer p{
+    font-size:1em;
+
+}
+
 /* 카테고리, 필터 적용 */
 
     /* 카테고리 */
@@ -188,4 +202,3 @@ div.detail{display:none;}
 #study:checked~#clubs>div:not(.study){ display:none;}
 #culture:checked~#clubs>div:not(.culture){ display:none;}
 #performance:checked~#clubs>div:not(.performance){ display:none;}
-

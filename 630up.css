@@ -78,11 +78,11 @@ input{ display:none;}
 }
 
 /* 상단-연락처 */
-#contact{
+#header{
     background:#efefef;
     margin-top:10px;
 }
-#contact>h3{
+#header>h3{
 font-weight:100;
 }
 
@@ -187,6 +187,21 @@ font-weight:100;
 
 #section>input:checked~div.detail{display:block;}
 
+/* "이 밑으로는 아직 내용이 없습니다!" 행 */
+div.contents_layer{
+    background: #3c4a65; color: white;
+    padding:10px;
+}
+
+div.contents_layer h2{
+    font-size:1.5em;
+    margin-bottom:15px;
+}
+
+div.contents_layer p{
+    font-size:1.2em;
+
+}
 
 /* 카테고리, 필터 적용 */
 
@@ -204,4 +219,6 @@ font-weight:100;
 #study:checked~#clubs>div:not(.study){ display:none;}
 #culture:checked~#clubs>div:not(.culture){ display:none;}
 #performance:checked~#clubs>div:not(.performance){ display:none;}
+
+
 

@@ -150,12 +150,12 @@ label[for=performance]{ width: 10%}
 }
     /* PC UI 숨기기 */
 .head{ display:none; }
-open,close{display:none;}
 
     /* section 전체 label로 덮기 */
 #section label {
     position:absolute;
     top:0px;bottom:0px;left:0px;right:0px;
+    opacity:0.0;
  }
 
     /* 글자 크기조절 */

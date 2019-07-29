@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143927010-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-143927010-3');
+    </script>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5RXG3LH');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+    <title>동아리:집</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="630up.css" media="screen and (min-width:630px)">
+    <link rel="stylesheet" href="630down.css" media="screen and (max-width:629px)">
+
+</head>
+<body>
+
+        <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5RXG3LH"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <!-- PC : 왼쪽 카테고리 / 모바일 : 위쪽 헤더 -->
+
+        <input id="all" type="radio" name="category" checked/>
+        <input id="major_club" type="radio" name="category" />
+        <input id="minor_club" type="radio" name="category" />
+        <input id="small_group" type="radio" name="category" />
+
+
+        <div id="side_category">
+            <a id="title" href="main.htm"><h1>동아리.zip</h1></a>
+            <h2>[동아리:집]</h2>
+
+            <label for="all"><h2 class="category_label" id="전체보기 카테고리" >전체 보기</h2></label>
+            <label for="major_club"><h2 class="category_label" id="정규동아리 카테고리" >정규 동아리</h2></label>
+            <label for="minor_club"><h2 class="category_label" id="가등록동아리 카테고리" >가등록 동아리</h2></label>
+            <label for="small_group"><h2 class="category_label" id="소모임 카테고리" >소모임</h2></label>
+        </div>
+
+        <!-- PC : 오른쪽 컨텐츠 / 모바일 : 아래쪽-->
+        
+        <input type="checkbox" id="fall_sem"/>
+        <input type="radio" name="topic" id="all_topic" checked/>
+        <input type="radio" name="topic" id="study"/>
+        <input type="radio" name="topic" id="sports"/>
+        <input type="radio" name="topic" id="culture"/>
+        <input type="radio" name="topic" id="performance"/>
+
+        <!-- 헤더 -->
+        <div id="header" class="main_contents">
+            <h3>정렬 기준<br>- 가나다-알파벳순, 내용이 있는 항목을 상단에 배치</h3>
+            <h2 class="mobile"><br>터치하면 상세 설명이 나와요!</h2>
+        </div>
+
+        <!-- 필터 -->
+        <div id="filter" class="main_contents">
+            <h2>상세 분류</h2>
+            <p>아래 상자를 클릭하세요.</p>
+            <div id="check">
+            <label class="filter_label" id ="쩜오기 모집 필터" for="fall_sem">쩜오기 모집</label>
+
+            <label class="filter_label" id ="전 분야 필터" for="all_topic">전 분야</label>
+            
+            <label class="filter_label" id ="학술 필터" for="study">학술</label>
+            
+            <label class="filter_label" id ="스포츠 필터" for="sports">스포츠</label>
+            
+            <label class="filter_label" id ="사회,문화 필터" for="culture">사회, 문화</label>
+            
+            <label class="filter_label" id ="공연 필터" for="performance">공연</label>
+            </div>
+
+            
+        </div>
+
+        <div class="club head main_contents">
+            <h2>동아리명</h2>
+            <h2>분야</h2>
+            <h2 id="detail_head">세부 내용</h2>
+        </div>
+        <div id="clubs">
+            <div id="section" class="major_club fall study">
+                <input id="본_detail" type="checkbox"/>
+                <div class="club main_contents" id="본">
+                    <h2>본</h2>
+                    <h2>인문학 동아리</h2>
+                    <label class="detail_label" id ="본 세부내용" for="본_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                        <p>유니스트에 단 하나뿐인 인문학 동아리 “본” 에서 <br/>2학기 쩜오기를 뽑을 예정입니다! 많은 관심 부탁드려요</p>
+                        <br/><hr/>
+                        <h3>페이스북 페이지 : <a class="link" id="본_facebook" href="https://www.facebook.com/unistbon" target="_sub">https://www.facebook.com/unistbon</a></h3>
+                </div>
+            </div>
+            
+            <div id="section" class="small_group fall sports">
+                <input id="암벽등반_detail" type="checkbox"/>
+                <div class="club main_contents" id="암벽등반">
+                    <h2>암벽등반</h2>
+                    <h2>암벽등반 소모임</h2>
+                    <label class="detail_label" id ="암벽등반 세부내용" for="암벽등반_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h3>연락처 : 김규민 010-4002-9448</h3>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall performance">
+                <input id="유니스트에 흥을 알려라!_detail" type="checkbox"/>
+                <div class="club main_contents" id="유니스트에 흥을 알려라!">
+                    <h2>유니스트에 흥을 알려라!</h2>
+                    <h2>사물놀이 동아리</h2>
+                    <label class="detail_label" id ="유흥 세부내용" for="유니스트에 흥을 알려라!_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <p>진 또 배 기' 유니스트 유일무이 사물놀이 동아리 <br/>"유니스트에 흥을 알려라!" 유흥이 당신을 기다립니다!!</p>
+                    <br/><hr/>
+                    <h3>페이스북 페이지 : <a class="link" id="유흥_facebook" href="https://www.facebook.com/유흥-653311598064213" target="_sub">https://www.facebook.com/유흥-653311598064213</a></h3>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall sports">
+                <input id="정복_detail" type="checkbox"/>
+                <div class="club main_contents" id="정복">
+                    <h2>정복</h2>
+                    <h2>복싱 동아리</h2>
+                    <label class="detail_label" id ="정복 세부내용" for="정복_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h3>유튜브 영상 : <a class="link" id="정복_youtube" href="https://youtu.be/kGKzOHsJq5Y" target="_sub">https://youtu.be/kGKzOHsJq5Y</a></h3>
+                    <h3>페이스북 페이지 : <a class="link" id="정복_facebook" href="https://www.facebook.com/unistboxers" target="_sub">https://www.facebook.com/unistboxers</a></h3>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall performance">
+                <input id="Crescendo_detail" type="checkbox"/>
+                <div class="club main_contents" id="Crescendo">
+                    <h2>Crescendo</h2>
+                    <h2>밴드 동아리</h2>
+                    <label class="detail_label" id ="Crescendo 세부내용" for="Crescendo_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <p>안녕하세요 유니스트 인디밴드 동아리 Crescendo 입니다! <br/>2학기에 쩜오기 신청을 받을 예정이니, 부담 없이 많이 신청 해주세요!</p>
+                    <br/><hr/>
+                    <h3>페이스북 페이지 : <a class="link" id="Crescendo_facebook" href="https://www.facebook.com/Crescendounist" target="_sub">https://www.facebook.com/Crescendounist</a></h3>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall performance">
+                <input id="Melting Point_detail" type="checkbox"/>
+                <div class="club main_contents" id="Melting Point">
+                    <h2>Melting Point</h2>
+                    <h2>밴드 동아리</h2>
+                    <label class="detail_label" id ="Melting Point 세부내용" for="Melting Point_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <p>최고 꿀잼 멜팅포인트로 오세요....비기너도 좋습니당! <br/>착하고 실력짱짱한 선배들이 다 알려줍니다.</p>
+                    <br/><hr/>
+                    <h3>페이스북 페이지 : <a class="link" id="Melting Point_facebook" href="https://www.facebook.com/unimelpo" target="_sub">https://www.facebook.com/unimelpo</a></h3>
+                </div>
+            </div>
+  
+            <div id="section" class="small_group fall performance">
+                <input id="Pineapple_detail" type="checkbox"/>
+                <div class="club main_contents" id="Pineapple">
+                    <h2>Pineapple</h2>
+                    <h2>보컬 소모임</h2>
+                    <label class="detail_label" id ="Pineapple 세부내용" for="Pineapple_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <p>노래실력은 필요없다?! 노래라는 같은 취미를 공유하는 동아리계의 2트랙 보컬 소모임 파인애플입니다~ <br/>신입생, 복학생, 막학기, 석박사 모두 환영입니다ㅎㅎ</p>
+                    <br/><hr/>
+                    <h3>페이스북 페이지 : <a class="link" id="Pineapple_facebook" href="https://www.facebook.com/UnistPineapple" target="_sub">https://www.facebook.com/UnistPineapple</a></h3>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall sports">
+                <input id="SHAMU_detail" type="checkbox"/>
+                <div class="club main_contents" id="SHAMU">
+                    <h2>SHAMU</h2>
+                    <h2>수영 동아리</h2>
+                    <label class="detail_label" id ="SHAMU 세부내용" for="SHAMU_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <p>☆UNIST☆♚♚☆수영동아리☆♚♚가입시$$전원 ☆샤무☆수모 제공☜☜※<br/>♜SHAMU♜훈련부장님의￥무료강습§§쩜오기도#모집예정#§§<br/>★수영친구★인싸가 될 기회@@@ 즉시이동</p>
+                    <br/><hr/>
+                    <h3>페이스북 페이지 : <a class="link" id="SHAMU_facebook" href="https://www.facebook.com/UNIST.SHAMU" target="_sub">https://www.facebook.com/UNIST.SHAMU</a></h3>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall sports">
+                <input id="UNIST ROCKETS_detail" type="checkbox"/>
+                <div class="club main_contents" id="UNIST ROCKETS">
+                    <h2>UNIST ROCKETS</h2>
+                    <h2>야구 동아리</h2>
+                    <label class="detail_label" id ="UNIST ROCKETS 세부내용" for="UNIST ROCKETS_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <p>답답한 크보 그만보시고 직접 뜁시다 <br/>유니스트 유일무이 유사예능 동아리 UNIST 로켓츠</p>
+                    <br/><hr/>
+                    <h3>페이스북 페이지 : <a class="link" id="UNIST ROCKETS_facebook" href="https://www.facebook.com/UnistRockets" target="_sub">https://www.facebook.com/UnistRockets</a></h3>
+                </div>
+            </div>
+
+            <div id="section" class="contents_layer main_contents major_club minor_club small_group fall sports study culture performance">
+                <h2>이 밑으로는 아직 내용이 없습니다!</h2>
+                <p>내용 수정 및 추가, 개선사항 제안은<br/>아래 연락처로 보내주시면 감사하겠습니다!<hr>
+                   010-5227-4809 / ns4809@unist.ac.kr</p>
+            </div>
+        
+            <div id="section" class="small_group fall">
+                <input id="너나들이_detail" type="checkbox"/>
+                <div class="club main_contents" id="너나들이">
+                    <h2>너나들이</h2>
+                    <h2>- 소모임</h2>
+                    <label class="detail_label" id ="너나들이 세부내용" for="너나들이_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall culture">
+                <input id="단비_detail" type="checkbox"/>
+                <div class="club main_contents" id="단비">
+                    <h2>단비</h2>
+                    <h2>봉사 동아리</h2>
+                    <label class="detail_label" id ="단비 세부내용" for="단비_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall sports">
+                <input id="비연_detail" type="checkbox"/>
+                <div class="club main_contents" id="비연">
+                    <h2>비연</h2>
+                    <h2>태권도 동아리</h2>
+                    <label class="detail_label" id ="비연 세부내용" for="비연_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="minor_club sports">
+                <input id="섹시테니스_detail" type="checkbox"/>
+                <div class="club main_contents" id="섹시테니스">
+                    <h2>섹시테니스</h2>
+                    <h2>테니스 (가)동아리</h2>
+                    <label class="detail_label" id ="섹시테니스 세부내용" for="섹시테니스_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall culture">
+                <input id="수담_detail" type="checkbox"/>
+                <div class="club main_contents" id="수담">
+                    <h2>수담</h2>
+                    <h2>보드게임 동아리</h2>
+                    <label class="detail_label" id ="수담 세부내용" for="수담_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="minor_club fall sports">
+                <input id="아낙수나문_detail" type="checkbox"/>
+                <div class="club main_contents" id="아낙수나문">
+                    <h2>아낙수나문</h2>
+                    <h2>농구 (가)동아리</h2>
+                    <label class="detail_label" id ="아낙수나문 세부내용" for="아낙수나문_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="small_group sports">
+                <input id="조정부_detail" type="checkbox"/>
+                <div class="club main_contents" id="조정부">
+                    <h2>조정부</h2>
+                    <h2>조정 소모임</h2>
+                    <label class="detail_label" id ="조정부 세부내용" for="조정부_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="small_group culture">
+                <input id="커피니_detail" type="checkbox"/>
+                <div class="club main_contents" id="커피니">
+                    <h2>커피니</h2>
+                    <h2>커피 소모임</h2>
+                    <label class="detail_label" id ="커피니 세부내용" for="커피니_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club study">
+                <input id="피노키오_detail" type="checkbox"/>
+                <div class="club main_contents" id="피노키오">
+                    <h2>피노키오</h2>
+                    <h2>로봇 동아리</h2>
+                    <label class="detail_label" id ="피노키오 세부내용" for="피노키오_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall study">
+                <input id="ASTRAL_detail" type="checkbox"/>
+                <div class="club main_contents" id="ASTRAL">
+                    <h2>ASTRAL</h2>
+                    <h2>천체관측 동아리</h2>
+                    <label class="detail_label" id ="ASTRAL 세부내용" for="ASTRAL_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall performance">
+                <input id="CZARDAS_detail" type="checkbox"/>
+                <div class="club main_contents" id="CZARDAS">
+                    <h2>CZARDAS</h2>
+                    <h2>현악합주 동아리</h2>
+                    <label class="detail_label" id ="CZARDAS 세부내용" for="CZARDAS_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club sports">
+                <input id="E.A. United_detail" type="checkbox"/>
+                <div class="club main_contents" id="E.A. United">
+                    <h2>E.A. United</h2>
+                    <h2>축구 동아리</h2>
+                    <label class="detail_label" id ="E.A. United 세부내용" for="E.A. United_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club sports">
+                <input id="Earth Cops_detail" type="checkbox"/>
+                <div class="club main_contents" id="Earth Cops">
+                    <h2>Earth Cops</h2>
+                    <h2>축구 동아리</h2>
+                    <label class="detail_label" id ="Earth Cops 세부내용" for="Earth Cops_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall performance">
+                <input id="Electronic Sensational Club_detail" type="checkbox"/>
+                <div class="club main_contents" id="Electronic Sensational Club">
+                    <h2>Electronic Sensational Club</h2>
+                    <h2>하우스파티 동아리</h2>
+                    <label class="detail_label" id ="Electronic Sensational Club 세부내용" for="Electronic Sensational Club_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall study">
+                <input id="Elite of Elites_detail" type="checkbox"/>
+                <div class="club main_contents" id="Elite of Elites">
+                    <h2>Elite of Elites</h2>
+                    <h2>수학물리 동아리</h2>
+                    <label class="detail_label" id ="Elite of Elites 세부내용" for="Elite of Elites_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="small_group culture">
+                <input id="Enactus UNIST_detail" type="checkbox"/>
+                <div class="club main_contents" id="Enactus UNIST">
+                    <h2>Enactus UNIST</h2>
+                    <h2>비즈니스 소모임</h2>
+                    <label class="detail_label" id ="Enactus UNIST 세부내용" for="Enactus UNIST_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall performance">
+                <input id="ENSEMBLE_detail" type="checkbox"/>
+                <div class="club main_contents" id="ENSEMBLE">
+                    <h2>ENSEMBLE</h2>
+                    <h2>오케스트라 동아리</h2>
+                    <label class="detail_label" id ="ENSEMBLE 세부내용" for="ENSEMBLE_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall performance">
+                <input id="EpideMIC_detail" type="checkbox"/>
+                <div class="club main_contents" id="EpideMIC">
+                    <h2>EpideMIC</h2>
+                    <h2>흑인음악 동아리</h2>
+                    <label class="detail_label" id ="EpideMIC 세부내용" for="EpideMIC_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall culture">
+                <input id="GRAPHOS_detail" type="checkbox"/>
+                <div class="club main_contents" id="GRAPHOS">
+                    <h2>GRAPHOS</h2>
+                    <h2>일러스트 동아리</h2>
+                    <label class="detail_label" id ="GRAPHOS 세부내용" for="GRAPHOS_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club study">
+                <input id="HEXA_detail" type="checkbox"/>
+                <div class="club main_contents" id="HEXA">
+                    <h2>HEXA</h2>
+                    <h2>정보보안 동아리</h2>
+                    <label class="detail_label" id ="HEXA 세부내용" for="HEXA_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="small_group fall">
+                <input id="In-finite_detail" type="checkbox"/>
+                <div class="club main_contents" id="In-finite">
+                    <h2>In-finite</h2>
+                    <h2>- 소모임</h2>
+                    <label class="detail_label" id ="In-finite 세부내용" for="In-finite_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club culture">
+                <input id="IVF_detail" type="checkbox"/>
+                <div class="club main_contents" id="IVF">
+                    <h2>IVF</h2>
+                    <h2>기독교 동아리</h2>
+                    <label class="detail_label" id ="IVF 세부내용" for="IVF_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall performance">
+                <input id="JOKER_detail" type="checkbox"/>
+                <div class="club main_contents" id="JOKER">
+                    <h2>JOKER</h2>
+                    <h2>마술 동아리</h2>
+                    <label class="detail_label" id ="JOKER 세부내용" for="JOKER_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club study">
+                <input id="JUNTO_detail" type="checkbox"/>
+                <div class="club main_contents" id="JUNTO">
+                    <h2>JUNTO</h2>
+                    <h2>생물 동아리</h2>
+                    <label class="detail_label" id ="JUNTO 세부내용" for="JUNTO_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall sports">
+                <input id="MACH_detail" type="checkbox"/>
+                <div class="club main_contents" id="MACH">
+                    <h2>MACH</h2>
+                    <h2>배드민턴 동아리</h2>
+                    <label class="detail_label" id ="MACH 세부내용" for="MACH_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club performance">
+                <input id="NEST_detail" type="checkbox"/>
+                <div class="club main_contents" id="NEST">
+                    <h2>NEST</h2>
+                    <h2>연극 동아리</h2>
+                    <label class="detail_label" id ="NEST 세부내용" for="NEST_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club performance">
+                <input id="PEAK_detail" type="checkbox"/>
+                <div class="club main_contents" id="PEAK">
+                    <h2>PEAK</h2>
+                    <h2>통기타 동아리</h2>
+                    <label class="detail_label" id ="PEAK 세부내용" for="PEAK_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall performance">
+                <input id="Pianistar_detail" type="checkbox"/>
+                <div class="club main_contents" id="Pianistar">
+                    <h2>Pianistar</h2>
+                    <h2>피아노 동아리</h2>
+                    <label class="detail_label" id ="Pianistar 세부내용" for="Pianistar_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall performance">
+                <input id="Pitch high_detail" type="checkbox"/>
+                <div class="club main_contents" id="Pitch high">
+                    <h2>Pitch high</h2>
+                    <h2>아카펠라 동아리</h2>
+                    <label class="detail_label" id ="Pitch high 세부내용" for="Pitch high_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall study">
+                <input id="ULECA_detail" type="checkbox"/>
+                <div class="club main_contents" id="ULECA">
+                    <h2>ULECA</h2>
+                    <h2>화학 동아리</h2>
+                    <label class="detail_label" id ="ULECA 세부내용" for="ULECA_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club performance">
+                <input id="UNICH_detail" type="checkbox"/>
+                <div class="club main_contents" id="UNICH">
+                    <h2>UNICH</h2>
+                    <h2>응원단 동아리</h2>
+                    <label class="detail_label" id ="UNICH 세부내용" for="UNICH_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall sports">
+                <input id="UNIS_detail" type="checkbox"/>
+                <div class="club main_contents" id="UNIS">
+                    <h2>UNIS</h2>
+                    <h2>농구 동아리</h2>
+                    <label class="detail_label" id ="UNIS 세부내용" for="UNIS_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall culture">
+                <input id="UNIST CCC_detail" type="checkbox"/>
+                <div class="club main_contents" id="UNIST CCC">
+                    <h2>UNIST CCC</h2>
+                    <h2>기독교 동아리</h2>
+                    <label class="detail_label" id ="UNIST CCC 세부내용" for="UNIST CCC_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club culture">
+                <input id="UNIST RCY_detail" type="checkbox"/>
+                <div class="club main_contents" id="UNIST RCY">
+                    <h2>UNIST RCY</h2>
+                    <h2>봉사 동아리</h2>
+                    <label class="detail_label" id ="UNIST RCY 세부내용" for="UNIST RCY_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall performance">
+                <input id="Unplugged_detail" type="checkbox"/>
+                <div class="club main_contents" id="Unplugged">
+                    <h2>Unplugged</h2>
+                    <h2>어쿠스틱밴드 동아리</h2>
+                    <label class="detail_label" id ="Unplugged 세부내용" for="Unplugged_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="major_club fall performance">
+                <input id="U-turn_detail" type="checkbox"/>
+                <div class="club main_contents" id="U-turn">
+                    <h2>U-turn</h2>
+                    <h2>댄스 동아리</h2>
+                    <label class="detail_label" id ="U-turn 세부내용" for="U-turn_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>
+        
+            <div id="section" class="minor_club fall study">
+                <input id="Value Explorer_detail" type="checkbox"/>
+                <div class="club main_contents" id="Value Explorer">
+                    <h2>Value Explorer</h2>
+                    <h2>금융주식경제 (가)동아리</h2>
+                    <label class="detail_label" id ="Value Explorer 세부내용" for="Value Explorer_detail">클릭</label>
+                </div>
+                <div class="main_contents detail">
+                    <h2>내용 추가 : 상단 연락처 참조</h2>
+                </div>
+            </div>           
+        </div>
+
+        
+</body>
+</html>
